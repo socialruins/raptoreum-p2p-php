@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Peer;
+namespace Raptorio\Blockchain\Networking\Peer;
 
-use BitWasp\Bitcoin\Block\FilteredBlock;
-use BitWasp\Bitcoin\Bloom\BloomFilter;
-use BitWasp\Bitcoin\Chain\BlockLocator;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\Messages\Ping;
-use BitWasp\Bitcoin\Networking\Messages\Version;
-use BitWasp\Bitcoin\Networking\NetworkMessage;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
-use BitWasp\Bitcoin\Networking\Structure\AlertDetail;
-use BitWasp\Bitcoin\Networking\Structure\Header;
-use BitWasp\Bitcoin\Networking\Structure\Inventory;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddress;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressTimestamp;
+use Raptorio\Blockchain\Block\FilteredBlock;
+use Raptorio\Blockchain\Bloom\BloomFilter;
+use Raptorio\Blockchain\Chain\BlockLocator;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\Messages\Ping;
+use Raptorio\Blockchain\Networking\Messages\Version;
+use Raptorio\Blockchain\Networking\NetworkMessage;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Networking\Structure\AlertDetail;
+use Raptorio\Blockchain\Networking\Structure\Header;
+use Raptorio\Blockchain\Networking\Structure\Inventory;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddress;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressTimestamp;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
@@ -39,7 +39,7 @@ class Peer extends EventEmitter
     private $loop;
 
     /**
-     * @var \BitWasp\Bitcoin\Networking\Messages\Factory
+     * @var \Raptorio\Blockchain\Networking\Messages\Factory
      */
     private $msgs;
 
@@ -79,10 +79,10 @@ class Peer extends EventEmitter
     private $incomingMsgHeader;
 
     /**
-     * @param \BitWasp\Bitcoin\Networking\Messages\Factory $msgs
+     * @param \Raptorio\Blockchain\Networking\Messages\Factory $msgs
      * @param LoopInterface $loop
      */
-    public function __construct(\BitWasp\Bitcoin\Networking\Messages\Factory $msgs, LoopInterface $loop)
+    public function __construct(\Raptorio\Blockchain\Networking\Messages\Factory $msgs, LoopInterface $loop)
     {
         $this->msgs = $msgs;
         $this->loop = $loop;

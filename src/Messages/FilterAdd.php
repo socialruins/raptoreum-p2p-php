@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
-use BitWasp\Bitcoin\Networking\Serializer\Message\FilterAddSerializer;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Networking\Serializer\Message\FilterAddSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class FilterAdd extends NetworkSerializable

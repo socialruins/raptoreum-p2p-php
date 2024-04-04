@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Crypto\Random\Random;
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
-use BitWasp\Bitcoin\Networking\Serializer\Message\PingSerializer;
+use Raptorio\Blockchain\Crypto\Random\Random;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Networking\Serializer\Message\PingSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class Ping extends NetworkSerializable
@@ -32,7 +32,7 @@ class Ping extends NetworkSerializable
     /**
      * @param Random $random
      * @return Ping
-     * @throws \BitWasp\Bitcoin\Exceptions\RandomBytesFailure
+     * @throws \Raptorio\Blockchain\Exceptions\RandomBytesFailure
      */
     public static function generate(Random $random): Ping
     {

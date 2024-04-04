@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Block\FilteredBlock;
-use BitWasp\Bitcoin\Bloom\BloomFilter;
-use BitWasp\Bitcoin\Chain\BlockLocator;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
-use BitWasp\Bitcoin\Crypto\Random\Random;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Networking\NetworkMessage;
-use BitWasp\Bitcoin\Networking\Serializer\NetworkMessageSerializer;
-use BitWasp\Bitcoin\Networking\Structure\AlertDetail;
-use BitWasp\Bitcoin\Networking\Structure\Inventory;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddress;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressTimestamp;
+use Raptorio\Blockchain\Block\FilteredBlock;
+use Raptorio\Blockchain\Bloom\BloomFilter;
+use Raptorio\Blockchain\Chain\BlockLocator;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Crypto\Random\Random;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Networking\NetworkMessage;
+use Raptorio\Blockchain\Networking\Serializer\NetworkMessageSerializer;
+use Raptorio\Blockchain\Networking\Structure\AlertDetail;
+use Raptorio\Blockchain\Networking\Structure\Inventory;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddress;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressTimestamp;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
@@ -242,7 +242,7 @@ class Factory
     }
     /**
      * @return Ping
-     * @throws \BitWasp\Bitcoin\Exceptions\RandomBytesFailure
+     * @throws \Raptorio\Blockchain\Exceptions\RandomBytesFailure
      */
     public function ping(): Ping
     {

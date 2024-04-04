@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\Serializer\Message\GetHeadersSerializer;
-use BitWasp\Bitcoin\Serializer\Chain\BlockLocatorSerializer;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\Serializer\Message\GetHeadersSerializer;
+use Raptorio\Blockchain\Serializer\Chain\BlockLocatorSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class GetHeaders extends AbstractBlockLocator

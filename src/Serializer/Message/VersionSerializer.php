@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Serializer\Message;
+namespace Raptorio\Blockchain\Networking\Serializer\Message;
 
-use BitWasp\Bitcoin\Networking\Messages\Version;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressSerializer;
-use BitWasp\Bitcoin\Serializer\Types;
+use Raptorio\Blockchain\Networking\Messages\Version;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressSerializer;
+use Raptorio\Blockchain\Serializer\Types;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;

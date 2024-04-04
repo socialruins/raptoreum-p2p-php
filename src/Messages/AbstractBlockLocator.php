@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Chain\BlockLocator;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Chain\BlockLocator;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
 
 abstract class AbstractBlockLocator extends NetworkSerializable
 {

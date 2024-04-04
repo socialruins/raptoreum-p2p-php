@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking;
+namespace Raptorio\Blockchain\Networking;
 
-use BitWasp\Bitcoin\SerializableInterface;
+use Raptorio\Blockchain\SerializableInterface;
 
 interface NetworkSerializableInterface extends SerializableInterface
 {

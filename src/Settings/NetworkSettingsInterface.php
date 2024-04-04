@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Settings;
+namespace Raptorio\Blockchain\Networking\Settings;
 
-use BitWasp\Bitcoin\Networking\DnsSeeds\DnsSeedList;
+use Raptorio\Blockchain\Networking\DnsSeeds\DnsSeedList;
 
 interface NetworkSettingsInterface
 {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking;
+namespace Raptorio\Blockchain\Networking;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\Random\Random;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Networking\Ip\IpInterface;
-use BitWasp\Bitcoin\Networking\Settings\NetworkSettings;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\Random\Random;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Networking\Ip\IpInterface;
+use Raptorio\Blockchain\Networking\Settings\NetworkSettings;
 use React\Dns\Resolver\Resolver;
 use React\EventLoop\LoopInterface;
 

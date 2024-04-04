@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Structure;
+namespace Raptorio\Blockchain\Networking\Structure;
 
-use BitWasp\Bitcoin\Networking\Ip\IpInterface;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressTimestampSerializer;
+use Raptorio\Blockchain\Networking\Ip\IpInterface;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressTimestampSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class NetworkAddressTimestamp extends NetworkAddress

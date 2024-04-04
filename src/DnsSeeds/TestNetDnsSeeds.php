@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\DnsSeeds;
+namespace Raptorio\Blockchain\Networking\DnsSeeds;
 
 class TestNetDnsSeeds extends DnsSeedList
 {

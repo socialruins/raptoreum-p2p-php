@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Structure;
+namespace Raptorio\Blockchain\Networking\Structure;
 
-use BitWasp\Bitcoin\Networking\Serializer\Structure\AlertDetailSerializer;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Networking\Serializer\Structure\AlertDetailSerializer;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\BufferInterface;
 
 class AlertDetail extends Serializable
@@ -229,7 +229,7 @@ class AlertDetail extends Serializable
     }
 
     /**
-     * @see \BitWasp\Bitcoin\SerializableInterface::getBuffer()
+     * @see \Raptorio\Blockchain\SerializableInterface::getBuffer()
      * @return BufferInterface
      */
     public function getBuffer(): BufferInterface

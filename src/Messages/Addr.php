@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
-use BitWasp\Bitcoin\Networking\Serializer\Message\AddrSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressTimestampSerializer;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressTimestamp;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Networking\Serializer\Message\AddrSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressTimestampSerializer;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressTimestamp;
 use BitWasp\Buffertools\BufferInterface;
 
 class Addr extends NetworkSerializable implements \Countable
@@ -81,7 +81,7 @@ class Addr extends NetworkSerializable implements \Countable
     }
 
     /**
-     * @see \BitWasp\Bitcoin\SerializableInterface::getBuffer()
+     * @see \Raptorio\Blockchain\SerializableInterface::getBuffer()
      */
     public function getBuffer(): BufferInterface
     {

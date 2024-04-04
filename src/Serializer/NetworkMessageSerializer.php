@@ -2,50 +2,50 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Serializer;
+namespace Raptorio\Blockchain\Networking\Serializer;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\Messages\Block;
-use BitWasp\Bitcoin\Networking\Messages\FilterClear;
-use BitWasp\Bitcoin\Networking\Messages\GetAddr;
-use BitWasp\Bitcoin\Networking\Messages\MemPool;
-use BitWasp\Bitcoin\Networking\Messages\SendHeaders;
-use BitWasp\Bitcoin\Networking\Messages\Tx;
-use BitWasp\Bitcoin\Networking\Messages\VerAck;
-use BitWasp\Bitcoin\Networking\NetworkMessage;
-use BitWasp\Bitcoin\Networking\Serializer\Message\AddrSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\AlertSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\FeeFilterSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\FilterAddSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\FilterLoadSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\GetBlocksSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\GetDataSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\GetHeadersSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\HeadersSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\InvSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\MerkleBlockSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\NotFoundSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\PingSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\PongSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\RejectSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Message\VersionSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\AlertDetailSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\HeaderSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\InventorySerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressTimestampSerializer;
-use BitWasp\Bitcoin\Networking\Structure\Header;
-use BitWasp\Bitcoin\Serializer\Block\BlockHeaderSerializer;
-use BitWasp\Bitcoin\Serializer\Block\BlockSerializer;
-use BitWasp\Bitcoin\Serializer\Block\FilteredBlockSerializer;
-use BitWasp\Bitcoin\Serializer\Block\PartialMerkleTreeSerializer;
-use BitWasp\Bitcoin\Serializer\Bloom\BloomFilterSerializer;
-use BitWasp\Bitcoin\Serializer\Chain\BlockLocatorSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionSerializer;
-use BitWasp\Bitcoin\Serializer\Types;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\Messages\Block;
+use Raptorio\Blockchain\Networking\Messages\FilterClear;
+use Raptorio\Blockchain\Networking\Messages\GetAddr;
+use Raptorio\Blockchain\Networking\Messages\MemPool;
+use Raptorio\Blockchain\Networking\Messages\SendHeaders;
+use Raptorio\Blockchain\Networking\Messages\Tx;
+use Raptorio\Blockchain\Networking\Messages\VerAck;
+use Raptorio\Blockchain\Networking\NetworkMessage;
+use Raptorio\Blockchain\Networking\Serializer\Message\AddrSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\AlertSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\FeeFilterSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\FilterAddSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\FilterLoadSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\GetBlocksSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\GetDataSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\GetHeadersSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\HeadersSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\InvSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\MerkleBlockSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\NotFoundSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\PingSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\PongSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\RejectSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Message\VersionSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\AlertDetailSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\HeaderSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\InventorySerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressTimestampSerializer;
+use Raptorio\Blockchain\Networking\Structure\Header;
+use Raptorio\Blockchain\Serializer\Block\BlockHeaderSerializer;
+use Raptorio\Blockchain\Serializer\Block\BlockSerializer;
+use Raptorio\Blockchain\Serializer\Block\FilteredBlockSerializer;
+use Raptorio\Blockchain\Serializer\Block\PartialMerkleTreeSerializer;
+use Raptorio\Blockchain\Serializer\Bloom\BloomFilterSerializer;
+use Raptorio\Blockchain\Serializer\Chain\BlockLocatorSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionSerializer;
+use Raptorio\Blockchain\Serializer\Types;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
@@ -58,7 +58,7 @@ class NetworkMessageSerializer
     private $network;
 
     /**
-     * @var \BitWasp\Bitcoin\Math\Math
+     * @var \Raptorio\Blockchain\Math\Math
      */
     private $math;
 

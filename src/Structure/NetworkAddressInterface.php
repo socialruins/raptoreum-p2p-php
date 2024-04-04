@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Structure;
+namespace Raptorio\Blockchain\Networking\Structure;
 
-use BitWasp\Bitcoin\Networking\Ip\IpInterface;
+use Raptorio\Blockchain\Networking\Ip\IpInterface;
 
 interface NetworkAddressInterface
 {

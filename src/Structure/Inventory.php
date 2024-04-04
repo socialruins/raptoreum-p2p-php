@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Structure;
+namespace Raptorio\Blockchain\Networking\Structure;
 
-use BitWasp\Bitcoin\Networking\Serializer\Structure\InventorySerializer;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Networking\Serializer\Structure\InventorySerializer;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\BufferInterface;
 
 class Inventory extends Serializable

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Ip;
+namespace Raptorio\Blockchain\Networking\Ip;
 
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;

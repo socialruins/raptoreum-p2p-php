@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Peer;
+namespace Raptorio\Blockchain\Networking\Peer;
 
-use BitWasp\Bitcoin\Networking\Settings\NetworkSettings;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddress;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressInterface;
+use Raptorio\Blockchain\Networking\Settings\NetworkSettings;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddress;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressInterface;
 use Evenement\EventEmitter;
 use React\Promise\Deferred;
 use React\Promise\RejectedPromise;

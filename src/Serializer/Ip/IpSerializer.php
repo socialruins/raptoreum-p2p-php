@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Serializer\Ip;
+namespace Raptorio\Blockchain\Networking\Serializer\Ip;
 
 use Base32\Base32;
-use BitWasp\Bitcoin\Networking\Ip\IpInterface;
-use BitWasp\Bitcoin\Networking\Ip\Ipv4;
-use BitWasp\Bitcoin\Networking\Ip\Ipv6;
-use BitWasp\Bitcoin\Networking\Ip\Onion;
+use Raptorio\Blockchain\Networking\Ip\IpInterface;
+use Raptorio\Blockchain\Networking\Ip\Ipv4;
+use Raptorio\Blockchain\Networking\Ip\Ipv6;
+use Raptorio\Blockchain\Networking\Ip\Onion;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking;
+namespace Raptorio\Blockchain\Networking;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Networking\Serializer\NetworkMessageSerializer;
-use BitWasp\Bitcoin\Networking\Structure\Header;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Networking\Serializer\NetworkMessageSerializer;
+use Raptorio\Blockchain\Networking\Structure\Header;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\BufferInterface;
 
 class NetworkMessage extends Serializable

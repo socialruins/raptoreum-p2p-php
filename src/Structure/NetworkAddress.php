@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Structure;
+namespace Raptorio\Blockchain\Networking\Structure;
 
-use BitWasp\Bitcoin\Networking\Ip\IpInterface;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressSerializer;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Networking\Ip\IpInterface;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressSerializer;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\BufferInterface;
 
 class NetworkAddress extends Serializable implements NetworkAddressInterface

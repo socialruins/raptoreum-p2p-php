@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Serializer\Message;
+namespace Raptorio\Blockchain\Networking\Serializer\Message;
 
-use BitWasp\Bitcoin\Networking\Messages\Pong;
+use Raptorio\Blockchain\Networking\Messages\Pong;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
 

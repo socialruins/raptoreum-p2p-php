@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Peer;
+namespace Raptorio\Blockchain\Networking\Peer;
 
-use BitWasp\Bitcoin\Networking\DnsSeeds\DnsSeedList;
-use BitWasp\Bitcoin\Networking\Ip\Ipv4;
-use BitWasp\Bitcoin\Networking\Services;
-use BitWasp\Bitcoin\Networking\Settings\NetworkSettings;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddress;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressInterface;
+use Raptorio\Blockchain\Networking\DnsSeeds\DnsSeedList;
+use Raptorio\Blockchain\Networking\Ip\Ipv4;
+use Raptorio\Blockchain\Networking\Services;
+use Raptorio\Blockchain\Networking\Settings\NetworkSettings;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddress;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressInterface;
 use React\Dns\Resolver\Resolver;
 use React\Promise\Deferred;
 

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Peer;
+namespace Raptorio\Blockchain\Networking\Peer;
 
-use BitWasp\Bitcoin\Networking\Ip\IpInterface;
-use BitWasp\Bitcoin\Networking\Ip\Ipv4;
-use BitWasp\Bitcoin\Networking\Messages\Factory as MsgFactory;
-use BitWasp\Bitcoin\Networking\Messages\Version;
-use BitWasp\Bitcoin\Networking\Services;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddress;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressInterface;
+use Raptorio\Blockchain\Networking\Ip\IpInterface;
+use Raptorio\Blockchain\Networking\Ip\Ipv4;
+use Raptorio\Blockchain\Networking\Messages\Factory as MsgFactory;
+use Raptorio\Blockchain\Networking\Messages\Version;
+use Raptorio\Blockchain\Networking\Services;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddress;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Serializer\Message;
+namespace Raptorio\Blockchain\Networking\Serializer\Message;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Networking\Messages\Alert;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\AlertDetailSerializer;
-use BitWasp\Bitcoin\Serializer\Types;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Networking\Messages\Alert;
+use Raptorio\Blockchain\Networking\Serializer\Structure\AlertDetailSerializer;
+use Raptorio\Blockchain\Serializer\Types;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
@@ -45,7 +45,7 @@ class AlertSerializer
 
         $sigBuffer = $this->varstring->read($parser);
         $adapter = Bitcoin::getEcAdapter();
-        $serializer = EcSerializer::getSerializer('BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface', true, $adapter);
+        $serializer = EcSerializer::getSerializer('Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface', true, $adapter);
         $sig = $serializer->parse($sigBuffer);
 
         return new Alert($detail, $sig);

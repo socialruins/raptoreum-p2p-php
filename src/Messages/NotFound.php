@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\Serializer\Message\NotFoundSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\InventorySerializer;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\Serializer\Message\NotFoundSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\InventorySerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class NotFound extends AbstractInventory
@@ -22,7 +22,7 @@ class NotFound extends AbstractInventory
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\SerializableInterface::getBuffer()
+     * @see \Raptorio\Blockchain\SerializableInterface::getBuffer()
      */
     public function getBuffer(): BufferInterface
     {

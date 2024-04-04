@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Crypto\Random\Random;
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
-use BitWasp\Bitcoin\Networking\Serializer\Message\VersionSerializer;
-use BitWasp\Bitcoin\Networking\Serializer\Structure\NetworkAddressSerializer;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddress;
-use BitWasp\Bitcoin\Networking\Structure\NetworkAddressTimestamp;
+use Raptorio\Blockchain\Crypto\Random\Random;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Networking\Serializer\Message\VersionSerializer;
+use Raptorio\Blockchain\Networking\Serializer\Structure\NetworkAddressSerializer;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddress;
+use Raptorio\Blockchain\Networking\Structure\NetworkAddressTimestamp;
 use BitWasp\Buffertools\BufferInterface;
 
 class Version extends NetworkSerializable
@@ -86,7 +86,7 @@ class Version extends NetworkSerializable
      * @param BufferInterface $userAgent
      * @param int $startHeight
      * @param bool $relay
-     * @throws \BitWasp\Bitcoin\Exceptions\RandomBytesFailure
+     * @throws \Raptorio\Blockchain\Exceptions\RandomBytesFailure
      */
     public function __construct(
         int $version,
@@ -123,7 +123,7 @@ class Version extends NetworkSerializable
     /**
      * {@inheritdoc}
      * @see https://en.bitcoin.it/wiki/Protocol_documentation#version
-     * @see \BitWasp\Bitcoin\Network\NetworkSerializableInterface::getNetworkCommand()
+     * @see \Raptorio\Blockchain\Network\NetworkSerializableInterface::getNetworkCommand()
      */
     public function getNetworkCommand(): string
     {

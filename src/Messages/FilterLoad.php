@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Networking\Messages;
+namespace Raptorio\Blockchain\Networking\Messages;
 
-use BitWasp\Bitcoin\Bloom\BloomFilter;
-use BitWasp\Bitcoin\Networking\Message;
-use BitWasp\Bitcoin\Networking\NetworkSerializable;
-use BitWasp\Bitcoin\Networking\Serializer\Message\FilterLoadSerializer;
-use BitWasp\Bitcoin\Serializer\Bloom\BloomFilterSerializer;
+use Raptorio\Blockchain\Bloom\BloomFilter;
+use Raptorio\Blockchain\Networking\Message;
+use Raptorio\Blockchain\Networking\NetworkSerializable;
+use Raptorio\Blockchain\Networking\Serializer\Message\FilterLoadSerializer;
+use Raptorio\Blockchain\Serializer\Bloom\BloomFilterSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class FilterLoad extends NetworkSerializable
